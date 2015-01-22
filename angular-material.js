@@ -3152,7 +3152,7 @@ function MdBottomSheetProvider($$interimElementProvider) {
       };
 
       function onTouchStart(e) {
-        e.preventDefault();
+        e.stopPropagation();
         startTarget = e.target;
         startY = getY(e);
 
